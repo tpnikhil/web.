@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dream Travels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f8fb;
+        }
+
+        header {
+            background: #0077b6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #023e8a;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e')
+            center/cover;
+            height: 350px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            background: rgba(0,0,0,0.5);
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 30px;
+            color: #0077b6;
+        }
+
+        .packages {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px #ccc;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px;
+        }
+
+        .card p {
+            padding: 5px;
+        }
+
+        .price {
+            color: #0077b6;
+            font-weight: bold;
+        }
+
+        .inquiry {
+            background: white;
+            max-width: 450px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #023e8a;
+        }
+
+        footer {
+            background: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media(max-width: 600px) {
+            .hero h1 {
+                font-size: 25px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌍 Dream Travels</h1>
+    <p>Explore the World With Us!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#packages">Packages</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Discover Beautiful Destinations</h1>
+</section>
+
+<h2 id="destinations">Popular Destinations</h2>
+
+<div class="packages">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523">
+        <h3>Goa</h3>
+        <p>Beautiful Beaches and Adventures</p>
+        <p>Duration: 3 Days</p>
+        <p class="price">₹8,000</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23">
+        <h3>Manali</h3>
+        <p>Mountains and Snowfall</p>
+        <p>Duration: 5 Days</p>
+        <p class="price">₹12,000</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd">
+        <h3>Maldives</h3>
+        <p>Luxury Beach Holiday</p>
+        <p>Duration: 4 Days</p>
+        <p class="price">₹25,000</p>
+    </div>
+
+</div>
+
+<h2 id="packages">Holiday Packages & Itineraries</h2>
+
+<div class="packages">
+
+    <div class="card">
+        <h3>Goa Package</h3>
+        <p>Day 1: Beach Visit</p>
+        <p>Day 2: Water Sports</p>
+        <p>Day 3: Sightseeing</p>
+        <p class="price">₹8,000 / Person</p>
+    </div>
+
+    <div class="card">
+        <h3>Manali Package</h3>
+        <p>Day 1: Arrival</p>
+        <p>Day 2: Snow Activities</p>
+        <p>Day 3: Solang Valley</p>
+        <p>Day 4: Local Sightseeing</p>
+        <p>Day 5: Departure</p>
+        <p class="price">₹12,000 / Person</p>
+    </div>
+
+</div>
+
+<h2 id="contact">Travel Inquiry Form</h2>
+
+<div class="inquiry">
+
+    <form onsubmit="alert('Thank you! Your travel inquiry has been submitted.'); return false;">
+
+        <input type="text" placeholder="Enter Your Name" required>
+
+        <input type="email" placeholder="Enter Your Email" required>
+
+        <input type="tel" placeholder="Phone Number" required>
+
+        <select required>
+            <option value="">Select Destination</option>
+            <option>Goa</option>
+            <option>Manali</option>
+            <option>Maldives</option>
+        </select>
+
+        <input type="number" placeholder="Number of Travelers" min="1" required>
+
+        <input type="date" required>
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+
+    </form>
+
+</div>
+
+<footer>
+    <p>© 2026 Dream Travels | All Rights Reserved</p>
+    <p>Travel More, Explore More!</p>
+</footer>
+
+</body>
+</html>
