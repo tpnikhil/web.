@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Personal Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: #14213d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fca311;
+    transform: translateY(-3px);
+}
+
+section {
+    padding: 50px 10%;
+    animation: fadeIn 1s ease;
+}
+
+h2 {
+    color: #14213d;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #fca311;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.profile {
+    text-align: center;
+    background: #e5eaf3;
+    padding: 60px 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fca311;
+    object-fit: cover;
+}
+
+.profile h1 {
+    margin: 15px;
+    color: #14213d;
+}
+
+.btn {
+    display: inline-block;
+    background: #fca311;
+    color: #14213d;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #14213d;
+    color: white;
+    transform: scale(1.05);
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000015;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.skills span {
+    display: inline-block;
+    background: #14213d;
+    color: white;
+    padding: 10px 18px;
+    margin: 7px;
+    border-radius: 20px;
+}
+
+ul {
+    padding-left: 25px;
+    line-height: 2;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+}
+
+button {
+    background: #14213d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #fca311;
+    color: #14213d;
+}
+
+footer {
+    background: #14213d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media(max-width: 600px) {
+    section {
+        padding: 35px 6%;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="profile" id="home">
+    <img src="https://placehold.co/150x150?text=My+Photo"
+         alt="My Profile Photo">
+    <h1>Hello, I'm Your Name</h1>
+    <p>Student | Web Developer | Technology Enthusiast</p>
+    <a href="#about" class="btn">Explore My Profile</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>Hello! I am a passionate student interested in technology,
+        programming and web development. I enjoy learning new skills
+        and creating innovative projects.</p>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Educational Qualifications</h2>
+    <div class="card">
+        <h3>Degree / B.Tech</h3>
+        <p>College Name - 2025 to Present</p>
+    </div>
+    <div class="card">
+        <h3>Intermediate</h3>
+        <p>College Name - 2023 to 2025</p>
+    </div>
+    <div class="card">
+        <h3>SSC</h3>
+        <p>School Name - 2023</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>C Programming</span>
+        <span>MS Office</span>
+    </div>
+</section>
+
+<section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="card">
+        <ul>
+            <li>Reading Books</li>
+            <li>Listening to Music</li>
+            <li>Playing Games</li>
+            <li>Learning New Technologies</li>
+            <li>Travelling</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="card">
+        <h3>Personal Portfolio Website</h3>
+        <p>A responsive website to display my profile and skills.</p>
+    </div>
+    <div class="card">
+        <h3>Student Management System</h3>
+        <p>A simple project to manage student details.</p>
+    </div>
+</section>
+
+<section id="achievements">
+    <h2>Achievements</h2>
+    <div class="card">
+        <ul>
+            <li>Participated in technical events.</li>
+            <li>Completed programming courses.</li>
+            <li>Developed academic projects.</li>
+        </ul>
+    </div>
+</section>
+
+<section id="resume">
+    <h2>My Resume</h2>
+    <div class="card">
+        <p>Download my resume using the button below.</p>
+        <a href="resume.pdf" download class="btn">
+            Download Resume
+        </a>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Information</h2>
+    <div class="card">
+        <p>Email: yourmail@gmail.com</p>
+        <p>Phone: +91 XXXXXXXXXX</p>
+        <p>Location: Hyderabad, India</p>
+
+        <h3>Send Me a Message</h3>
+        <form onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Personal Portfolio | All Rights Reserved</p>
+</footer>
+
+<script>
+function sendMessage(event) {
+    event.preventDefault();
+    alert("Thank you! Your message has been submitted.");
+}
+</script>
+
+</body>
+</html>
